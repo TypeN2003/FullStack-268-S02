@@ -8,8 +8,10 @@ const express = require('express');
 const sqlite3 = require('sqlite3');
 const app = express();
 
+
 // connect to database
 const db = new sqlite3.Database('./Database/Book.sqlite');
+
 
 // parse incoming requests
 app.use(express.json());
